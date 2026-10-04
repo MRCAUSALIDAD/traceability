@@ -1,0 +1,12 @@
+FROM maven:3.9-eclipse-temurin-21
+
+RUN apt-get update \
+    && apt-get install -y \
+        zsh \
+        unzip \
+        curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+CMD ["zsh"]
