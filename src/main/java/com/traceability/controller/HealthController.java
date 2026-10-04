@@ -20,6 +20,6 @@ public class HealthController {
 
     @GetMapping(value = "/health")
     public HealthDto health() {
-        return healthService.stateHealth("OK");
+        return healthService.stateHealth();
     }
 }
