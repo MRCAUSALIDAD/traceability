@@ -16,7 +16,7 @@ public class HealthService {
         try {
             ResponseEntity<Void> response = restClient
             .get()
-            .uri("http://localhost:8080/api/health")
+            .uri("https://www.google.com")
             .retrieve()
             .toBodilessEntity();
 
